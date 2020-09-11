@@ -62,6 +62,10 @@
     You will return to the command prompt on my-vm-2
 
    i) To confirm that my-vm-2 can reach the web server on my-vm-1, at the command prompt on my-vm-2, execute this command:
+
+      - Get a list of instances: gcloud compute instances list --zone us-central1-b
+
+      - copy the external ip of my-vm-1
     
       curl http://my-vm-1/s
 
