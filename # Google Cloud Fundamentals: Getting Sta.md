@@ -12,6 +12,8 @@
 
     gcloud compute instances create "my-vm-1" --machine-type "n1-standard-1" --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default" --tags http
 
+    gcloud compute firewall-rules create allow-http --action=ALLOW --direction=INGRESS --rules=tcp:80 --target-tags=http
+
 2. Create a Compute Engine virtual machine using the gcloud command-line interface.
 
    gcloud config set compute/zone us-central1-b
